@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/layout_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/rectangle_corner_withooutradious">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:id="@+id/ll_services"
+            tools:ignore="UselessParent">
+            <RelativeLayout
+                android:id="@+id/rl_servicelayout"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/nursing_rounded_corner"
+                android:gravity="center">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cv_service"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:src="@mipmap/ic_launcher"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                   />
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/txt_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="BOOK CAR"
+                android:textAlignment="center"
+                android:textColor="@color/myvacalablack"
+                android:textSize="12sp"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

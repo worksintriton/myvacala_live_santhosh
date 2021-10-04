@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#efefef"/>
+
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollablContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerView"
+        android:layout_below="@+id/headerView" >
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <TextView
+                    android:textColor="@color/myvacalablack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/enjoyingmyvacala"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/axiforma_bold"
+                    android:gravity="center"
+                    android:layout_marginTop="30dp" />
+                <TextView
+                    android:textColor="@color/dark_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tellaboutus"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/axiforma_bold"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp" />
+
+                <ImageView
+                    android:id="@+id/iv_imgShare"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_share"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:textColor="@color/dark_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/findus"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/axiforma_bold"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp" />
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/myvacalalogo"
+                    android:scaleType="fitXY"/>
+                <TextView
+                    android:textColor="@color/dark_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/termsandconditions"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/axiforma_bold"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp" />
+                <TextView
+                    android:textColor="@color/dark_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/appversions"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/axiforma_bold"
+                    android:gravity="center"
+                    android:layout_marginTop="20dp" />
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@drawable/drawer_item_color"
+            app:itemTextColor="@drawable/drawer_item_color"
+            app:itemIconSize="20dp"
+            app:elevation="8dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation"
+            app:itemBackground="@color/myvacalablack"
+
+            />
+
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/myvacalabutton"
+        app:indicatorName="LineSpinFadeLoaderIndicator" />
+</RelativeLayout>

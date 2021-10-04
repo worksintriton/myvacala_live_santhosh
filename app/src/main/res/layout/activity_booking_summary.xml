@@ -1,0 +1,683 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="10dp">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/ic_close_gray" />
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="26dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/axiforma_semibold"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="@string/bookingsummary"/>
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/Lightgray"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollablContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerView"
+        android:layout_below="@+id/headerView" >
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_rect"
+                android:padding="10dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="30dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/ic_tick_bg_white"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="30dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/bookingsummaryinfo"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+            <TextView
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="@string/bookingdetails"
+                android:textColor="@color/myvacalablack"
+                android:textSize="18sp"
+                android:layout_marginTop="40dp"/>
+            <LinearLayout
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/rectangle_corner_withooutradious"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/service"
+                        android:textColor="@color/myvacalablack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/myvacalabutton"
+                        android:layout_marginTop="10dp"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/service"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/subservices"
+                        android:textColor="@color/myvacalablack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/myvacalabutton"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/txt_subservices"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/subservices"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/bookingid"
+                        android:textColor="@color/myvacalablack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/myvacalabutton"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/txt_bookingid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/bookingid"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="@string/vehicledetails"
+                    android:textColor="@color/myvacalablack"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/myvacalabutton"
+                        android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/txt_vehicledetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="@string/vehicledetails"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="@string/registrationno"
+                    android:textColor="@color/myvacalablack"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/myvacalabutton"
+                        android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/txt_registrationno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="@string/registrationno"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="@string/servicedate"
+                    android:textColor="@color/myvacalablack"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/myvacalabutton"
+                        android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/txt_servicedate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="@string/servicedate"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="14sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="5dp"/>
+
+            </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/servicetime"
+                        android:textColor="@color/myvacalablack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/myvacalabutton"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/txt_servicetime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/servicetime"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/amountpaid"
+                        android:textColor="@color/myvacalablack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/myvacalabutton"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/txt_amountpaid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/amountpaid"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_discountamount">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/discountamount"                        android:textColor="@color/myvacalablack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/myvacalabutton"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/txt_discountamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/discountamount"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_userissues">
+                    <TextView
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/userissues"                        android:textColor="@color/myvacalablack"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"/>
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="15dp"
+                        android:background="@color/myvacalabutton"
+                        android:layout_marginTop="10dp"/>
+                    <TextView
+                        android:id="@+id/txt_userissues"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/userissues"
+                        android:textColor="@color/dark_gray"
+                        android:textSize="14sp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="center"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:textColor="@color/myvacalablack"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/yourorderstatus"
+                        android:textSize="24sp"
+                        android:fontFamily="@font/axiforma_bold"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center"/>
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp">
+                    <RelativeLayout
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+                        <ImageView
+                            android:id="@+id/img_vehicletype"
+                            android:layout_width="50dp"
+                            android:layout_height="40dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_car" />
+                    </RelativeLayout>
+
+
+
+                    <!--   <ImageView
+                           android:layout_width="50dp"
+                           android:layout_height="40dp"
+                           android:scaleType="fitXY"
+                           android:src="@drawable/ic_bike" />-->
+
+
+                <!--   <LinearLayout
+
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <ImageView
+                           android:layout_width="50dp"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ic_bike"
+                           android:layout_marginStart="20dp"
+                           android:gravity="center"/>
+                   </LinearLayout>
+
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <ImageView
+                           android:layout_width="50dp"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ic_bike"
+                           android:layout_marginStart="20dp"
+                           android:gravity="center"/>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <ImageView
+                           android:layout_width="50dp"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ic_bike"
+                           android:layout_marginStart="20dp"
+                           android:gravity="center"/>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <ImageView
+                           android:layout_width="50dp"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ic_bike"
+                           android:layout_marginStart="20dp"
+                           android:gravity="center"/>
+                   </LinearLayout>
+                   <LinearLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_weight="1">
+
+                       <ImageView
+                           android:layout_width="50dp"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/ic_bike"
+                           android:layout_marginStart="20dp"
+                           android:gravity="center"/>
+                   </LinearLayout>-->
+                 </LinearLayout>
+            <LinearLayout
+                    android:id="@+id/rightLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/myvacalaradial"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/axiforma_bold"
+                            android:gravity="center"
+                            android:text="@string/bookingcomplete"
+                            android:textColor="@color/white"
+                            android:textSize="8sp" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/axiforma_bold"
+                            android:gravity="center"
+                            android:text="@string/bookingaccepted"
+                            android:textColor="@color/white"
+                            android:textSize="8sp" />
+
+                        <!-- <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/axiforma_bold"
+                                android:gravity="center"
+                                android:text="@string/vehiclepickedup"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />-->
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/axiforma_bold"
+                            android:gravity="center"
+                            android:text="@string/servicestarted"
+                            android:textColor="@color/white"
+                            android:textSize="8sp" />
+
+                        <TextView
+                            android:layout_width="80dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:fontFamily="@font/axiforma_bold"
+                            android:gravity="center"
+                            android:text="@string/servicecompleted"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            android:layout_marginEnd="20dp"/>
+
+                        <!-- <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="5dp"
+                                android:fontFamily="@font/axiforma_bold"
+                                android:gravity="center"
+                                android:text="@string/vehicledelivered"
+                                android:textColor="@color/white"
+                                android:textSize="8sp" />-->
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/axiforma_bold"
+                    android:gravity="center"
+                    android:text="@string/yourvehicleisbeingserviced"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="14sp" />
+
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@drawable/drawer_item_color"
+            app:itemTextColor="@drawable/drawer_item_color"
+            app:itemIconSize="20dp"
+            app:elevation="8dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation"
+            app:itemBackground="@color/myvacalablack"
+
+            />
+
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/myvacalabutton"
+        app:indicatorName="LineSpinFadeLoaderIndicator"
+        android:visibility="gone"/>
+</RelativeLayout>

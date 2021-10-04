@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/paleGrey"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+
+    <ScrollView
+        android:id="@+id/scrollablContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+        <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/layout_bg"
+                        android:layout_marginTop="30dp"
+                        android:layout_margin="10dp">
+                        <TextView
+                            android:textColor="@color/myvacalabutton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/personaldetails"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/axiforma_bold"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp">
+
+                            <TextView
+                                android:textColor="@color/myvacalablack"
+                                android:id="@+id/text"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/name"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/axiforma_bold"/>
+                            <EditText
+                                android:id="@+id/edt_name"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textWebEmailAddress"
+                                android:padding="10dp"
+                                android:background="@drawable/rectangle_corner"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/axiforma_semibold"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:textColor="@color/myvacalablack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/emailid"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/axiforma_bold"
+                                />
+                            <EditText
+                                android:id="@+id/edt_emailid"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="textWebEmailAddress"
+                                android:padding="10dp"
+                                android:background="@drawable/rectangle_corner"
+                                android:textSize="14sp"
+                               android:fontFamily="@font/axiforma_semibold"/>
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:textColor="@color/myvacalablack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mobileno"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/axiforma_bold"
+                                />
+                            <EditText
+                                android:id="@+id/edt_mobilenumber"
+                                android:layout_marginTop="5dp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:inputType="phone"
+                                android:maxLength="10"
+                                android:padding="10dp"
+                                android:background="@drawable/rectangle_corner"
+                                android:textSize="14sp"
+                               android:fontFamily="@font/axiforma_semibold"/>
+
+
+
+                        </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/book_now_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginRight="90dp"
+                app:cardBackgroundColor="@color/myvacalabutton"
+                app:cardCornerRadius="5dp"
+                android:layout_marginTop="60dp"
+                app:cardElevation="5dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp">
+
+
+
+                <Button
+                    android:id="@+id/btn_update_profile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textAllCaps="true"
+                    />
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

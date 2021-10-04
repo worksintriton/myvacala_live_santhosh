@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_genuinueparts"
+        android:title="@string/genuine" />
+    <item
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_warranty"
+        android:title="@string/warranty"/>
+    <item
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:id="@+id/myvehicle"
+        android:icon="@drawable/ic_myvehicle_white"
+        android:title="@string/affardable"/>
+
+    <item
+        android:id="@+id/cart"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_pickupdrop"
+        android:title="@string/pickupanddrop" />
+
+
+
+
+</menu>

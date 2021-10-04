@@ -1,0 +1,383 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.AddMyAddressActivity"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true" >
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/app_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollablContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footerView"
+        android:layout_below="@+id/headerView"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlmap"
+                android:layout_margin="10dp"
+                android:background="@drawable/round_corner">
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp" />
+
+
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rladdressdetails"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="20dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_marker"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="10dp"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/button1button"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_cityname"
+                    android:layout_toEndOf="@id/button1button"
+                    android:layout_marginEnd="10dp"
+                    android:layout_width="190dp"
+                    android:ellipsize="end"
+                    android:text="TESSDGDSGADSGD TESSDGDSGADSGD"
+                    android:singleLine="true"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:textColor="@color/myvacalablack"
+                    android:textSize="16sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_address"
+                    android:layout_toEndOf="@id/button1button"
+                    android:layout_marginEnd="80dp"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:text="TESSDGD dgsdg dgasdg saddagdasg dsgasdg sadgdsgds SGADSGD"
+                    android:layout_below="@+id/txt_cityname"
+                    android:singleLine="true"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="8sp"
+                    tools:ignore="HardcodedText,SmallSp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rlchangebutton"
+                    android:layout_toEndOf="@+id/txt_cityname"
+                    android:layout_marginStart="20dp">
+
+                    <Button
+                        android:id="@+id/btn_change"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:minHeight="30dp"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/button_background"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="@string/change"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:text="@string/pleaseaddyouraddressdetialsbelow"
+                android:singleLine="true"
+                android:fontFamily="@font/axiforma_semibold"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                />
+
+            <EditText
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/edt_floatandbuildingno"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_corner"
+                android:textSize="14sp"
+                android:fontFamily="@font/axiforma_semibold"
+                android:hint="@string/flotnobuildingno"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+            <EditText
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/edt_nearbylandmark"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_corner"
+                android:textSize="14sp"
+                android:fontFamily="@font/axiforma_semibold"
+                android:hint="@string/nearbylandmark"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:ellipsize="end"
+                android:text="@string/saveas"
+                android:singleLine="true"
+                android:fontFamily="@font/axiforma_semibold"
+                android:textColor="@color/dark_gray"
+                android:textSize="14sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                tools:ignore="DisableBaselineAlignment">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_home"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:background="@drawable/button_background"
+                        android:layout_gravity="center"
+                        tools:ignore="UselessParent"
+                        android:padding="5dp">
+                        <ImageView
+                            android:id="@+id/ivhome"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_home_white"
+                            android:layout_gravity="center"
+                            tools:ignore="ContentDescription" />
+                        <TextView
+                            android:id="@+id/txt_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/home"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/axiforma_semibold"
+                            android:textColor="@color/white"
+                            android:gravity="center"
+                            android:layout_marginBottom="10dp"
+                            />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/ll_work"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        tools:ignore="UseCompoundDrawables,UselessParent"
+                        android:padding="5dp">
+                        <ImageView
+                            android:id="@+id/ivwork"
+                            android:layout_marginTop="10dp"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/ic_work"
+                            android:layout_gravity="center"
+                            tools:ignore="ContentDescription" />
+
+                        <TextView
+                            android:id="@+id/txt_work"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/axiforma_semibold"
+                            android:gravity="center"
+                            android:text="@string/work"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="13sp" />
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/ll_others"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        tools:ignore="UselessParent"
+                        android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/ivothers"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/ic_marker_color"
+                        android:layout_gravity="center"
+                        tools:ignore="ContentDescription" />
+                    <TextView
+                        android:id="@+id/txt_others"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/others"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:textColor="@color/dark_gray"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp"
+                        />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+            <EditText
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:id="@+id/edt_pickname"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:padding="10dp"
+                android:background="@drawable/rectangle_corner"
+                android:textSize="14sp"
+                android:fontFamily="@font/axiforma_semibold"
+                android:hint="@string/pickanickname"
+                tools:ignore="Autofill,LabelFor,TextFields" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/book_now_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            app:cardBackgroundColor="@color/myvacalabutton"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+
+
+            <Button
+                android:id="@+id/btn_savelocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="@string/savethislocation"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:textAllCaps="false"/>
+        </androidx.cardview.widget.CardView>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemIconTint="@drawable/drawer_item_color"
+            app:itemTextColor="@drawable/drawer_item_color"
+            app:itemIconSize="20dp"
+            app:elevation="8dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation"
+            app:itemBackground="@color/myvacalablack"
+
+            />
+
+
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/myvacalabutton"
+        app:indicatorName="LineSpinFadeLoaderIndicator" />
+
+</RelativeLayout>
+
+
+

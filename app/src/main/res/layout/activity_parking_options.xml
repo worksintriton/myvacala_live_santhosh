@@ -1,0 +1,656 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_withoutbg"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp">
+                <ImageView
+                    android:id="@+id/cv_vehicleimage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_vehiclename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text="vehiclename"
+                    android:textColor="@color/myvacalablack"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_vehiclefueltype"
+                        android:layout_width="50dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/button_rectangle_corner"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/fueltype"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        tools:ignore="SmallSp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/txt_vehicle_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:maxLines="1"
+                        android:text="@string/vehicle_number"
+                        android:textColor="@color/myvacalablack"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/whiteFive"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollablContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footerView"
+        android:layout_below="@+id/headerView"
+        android:fillViewport="true"
+        android:layout_marginBottom="20dp">
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_corner">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:src="@drawable/parking_bg"
+                    android:scaleType="fitXY"/>
+
+                <ImageView
+                    android:id="@+id/img_header_back"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/ic_backarrow_blackrounded" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="160dp">
+
+                        <TextView
+                            android:id="@+id/txt_parking_name"
+                            android:layout_marginStart="20dp"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/axiforma_semibold"
+                            android:text="Parking Options"
+                             android:maxLines="1"
+                            android:ellipsize="end"
+                            />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        android:layout_marginStart="10dp"
+                        android:id="@+id/rlshare">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/ll_share"
+                            android:gravity="center"
+                            tools:ignore="UselessParent">
+
+
+                            <ImageView
+                                android:id="@+id/img_share"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:src="@drawable/ic_share_white"
+                                android:scaleType="centerInside"
+                                />
+
+                            <TextView
+                                android:layout_below="@+id/img_share"
+                                android:padding="5dp"
+                                android:id="@+id/btn_availabele"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/axiforma_semibold"
+                                android:text="@string/share_location"
+                                android:textAlignment="center"
+                                android:textSize="12sp"
+                                android:textColor="@color/white"
+                                tools:ignore="SmallSp"
+                                />
+                        </LinearLayout>
+
+
+
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/layout_bg_round"
+                    android:layout_marginTop="220dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="vertical"
+                                    android:layout_weight="1">
+
+                                    <LinearLayout
+                                        android:id="@+id/lladdressdetails"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginEnd="10dp"
+                                        android:layout_marginStart="10dp"
+                                        android:orientation="horizontal"
+                                        android:layout_marginTop="10dp"
+                                        tools:ignore="UselessParent">
+
+                                        <ImageView
+                                            android:layout_width="20dp"
+                                            android:layout_height="20dp"
+                                            android:src="@drawable/ic_marker"
+                                            android:scaleType="centerInside"
+                                            android:layout_gravity="center"
+                                            android:layout_marginEnd="7dp"
+                                            android:padding="1dp"
+                                            android:id="@+id/button1button"
+                                            tools:ignore="ContentDescription" />
+
+                                        <TextView
+                                            android:id="@+id/txt_address"
+                                            android:layout_width="190dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginEnd="10dp"
+                                            android:ellipsize="end"
+                                            android:fontFamily="@font/axiforma_semibold"
+                                            android:maxLines="2"
+                                            android:text="TESSDGDSGADSGD"
+                                            android:textColor="@color/dark_gray"
+                                            android:textSize="10sp"
+                                            tools:ignore="HardcodedText" />
+
+
+
+                                    </LinearLayout>
+
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center"
+                                    android:layout_weight="2"
+                                    android:layout_marginEnd="15dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/axiforma_semibold"
+                                        android:textColor="@color/myvacalabutton"
+                                        android:text="Slots"
+                                        />
+
+                                    <Button
+                                        android:layout_marginStart="5dp"
+                                        android:padding="5dp"
+                                        android:id="@+id/btn_parking_slots_count"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:minHeight="20dp"
+                                        android:fontFamily="@font/axiforma_semibold"
+                                        android:text="available"
+                                        android:textAlignment="center"
+                                        android:textSize="12sp"
+                                        android:gravity="center"
+                                        android:textAllCaps="false"
+                                        android:background="@drawable/button_rectangle_corner"
+                                        android:textColor="@color/white"
+                                        tools:ignore="SmallSp"
+                                        />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                tools:ignore="UseCompoundDrawables"
+                                android:layout_marginStart="10dp">
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:background="@drawable/ic_speed"/>
+
+                                <TextView
+                                    android:id="@+id/txt_distance_reachtime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/axiforma_semibold"
+                                    android:text="2.3mins/3.3 mins"
+                                    android:textColor="@color/myvacalabutton"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+
+
+
+
+
+
+
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="@color/myvacalablack"
+                android:text="Booking Window"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/axiforma_semibold"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_gray"
+                android:layout_marginTop="8dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/paleGrey">
+
+                <TextView
+                    android:id="@+id/txt_bookingdateandtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:text="Booking date and time"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:id="@+id/rlchangedateandtime">
+
+                    <ImageView
+                        android:id="@+id/img_changedateandtime"
+                        android:layout_width="35dp"
+                        android:layout_height="36dp"
+                        android:background="@drawable/changedatetime" />
+
+                        <TextView
+                            android:layout_below="@+id/img_changedateandtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:fontFamily="@font/axiforma_semibold"
+                            android:text="Change"
+                            android:textAlignment="center"
+                            android:textSize="12sp"
+                            android:textColor="@color/dark_gray"
+                            tools:ignore="SmallSp"
+                            />
+
+
+
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_gray"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/dark_gray"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/dark_gray"
+                    android:text="Payment"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:layout_marginTop="20dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="Total"
+                        android:fontFamily="@font/axiforma_semibold"
+                        />
+                    <TextView
+                        android:id="@+id/txt_total"
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="Total"
+                        android:fontFamily="@font/axiforma_semibold"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/green"
+                        android:text="Discount"
+                        android:fontFamily="@font/axiforma_semibold"
+                        />
+                    <TextView
+                        android:id="@+id/txt_discount"
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/green"
+                        android:text="Discount"
+                        android:fontFamily="@font/axiforma_semibold"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        android:text="To Pay"
+                        android:fontFamily="@font/axiforma_semibold"
+                        />
+                    <TextView
+                        android:id="@+id/txt_to_pay"
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:text="Topay"
+                        android:fontFamily="@font/axiforma_semibold"
+                        />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle_corner"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edt_coupon"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:hint="Promo Coupon"
+                    android:imeOptions="actionDone"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/myvacalablack"
+                    android:textSize="14sp"
+                    android:layout_marginEnd="10dp"
+                    tools:ignore="Autofill,TextFields"
+                    />
+                <RelativeLayout
+                    android:layout_marginStart="80dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:layout_gravity="end">
+
+                    <Button
+                        android:id="@+id/btn_apply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="26dp"
+                        android:background="@drawable/button_rectangle_corner_gray"
+                        android:text="@string/apply"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:padding="5dp"/>
+
+
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="end"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:background="@drawable/button_background"
+                    android:id="@+id/rlpay">
+                    <TextView
+                        android:layout_marginStart="20dp"
+                        android:id="@+id/txt_pay"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="Pay"
+                        android:textSize="12sp"
+                        android:textColor="@color/white"
+                        tools:ignore="SmallSp"
+                        android:gravity="center"
+                       android:layout_marginTop="12dp"
+                        />
+                    <ImageView
+                        android:layout_marginStart="10dp"
+                        android:layout_toRightOf="@+id/txt_pay"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/ic_forware_whitebg"
+                        android:layout_margin="5dp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_parking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemIconTint="@drawable/drawer_item_color"
+            app:itemTextColor="@drawable/drawer_item_color"
+            app:itemIconSize="20dp"
+            app:elevation="8dp"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation_parking"
+            app:itemBackground="@color/myvacalablack"
+            app:itemTextAppearanceActive="@style/BottomNavigationView.Active"
+            app:itemTextAppearanceInactive="@style/BottomNavigationView"
+
+            />
+
+    </LinearLayout>
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/myvacalabutton"
+        app:indicatorName="LineSpinFadeLoaderIndicator"
+        tools:ignore="ObsoleteLayoutParam" />
+</RelativeLayout>
+

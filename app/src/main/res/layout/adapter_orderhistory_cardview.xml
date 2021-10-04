@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        card_view:cardUseCompatPadding="true"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_root">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp">
+
+                <RelativeLayout
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/ic_rect_cut"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/cv_ordervehicle_image"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/logo"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_ordervehicle_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="Vehicle Name"
+                        android:textColor="@color/myvacalablack"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/btn_orderfuel_type"
+                        android:layout_width="70dp"
+                        android:layout_height="15dp"
+                        android:background="@drawable/button_rectangle_corner"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:maxLines="1"
+                        android:text="Diesel"
+                        android:textColor="@color/white"
+                        android:textSize="8sp" />
+
+
+
+
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+                    <LinearLayout
+                        android:id="@+id/llEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:orientation="vertical"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp">
+
+                        <Button
+                            android:id="@+id/btn_orderstatus"
+                            android:layout_width="90dp"
+                            android:layout_height="26dp"
+                            android:background="@drawable/button_rectangle_corner"
+                            android:fontFamily="@font/axiforma_semibold"
+                            android:text="On Going"
+                            android:textColor="@color/white"
+                            android:textSize="8sp"
+                            android:maxLines="2"
+                            android:ellipsize="end"/>
+                        <TextView
+                            android:id="@+id/txt_order_status"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/axiforma_semibold"
+                            android:text="Status"
+                            android:textColor="@color/dark_gray"
+                            android:textSize="12sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="30dp"/>
+
+
+
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="Booking ID"
+                    android:textColor="@color/myvacalablack"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+                <TextView
+                    android:id="@+id/txt_order_bookingid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="bookingid"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/ll_userissues"
+                android:layout_marginTop="5dp">
+                <TextView
+                    android:layout_marginStart="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="@string/userissues"
+                    android:textColor="@color/myvacalablack"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+                <TextView
+                    android:id="@+id/txt_userissues"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:text="bookingid"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+            <View
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Lightgray"/>
+
+
+            <TextView
+                android:id="@+id/txt_order_bookingstatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/axiforma_semibold"
+                android:maxLines="1"
+                android:text="Pick up scheduled"
+                android:textColor="@color/myvacalabutton"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/txt_order_bookingdateandtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="Date and time"
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+               <View
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Lightgray"/>
+
+            <TextView
+                android:id="@+id/txt_orderservices_charge_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="Rs9999"
+                android:textColor="@color/myvacalablack"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+            <TextView
+                android:id="@+id/txt_lblService"
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/axiforma_semibold"
+                android:maxLines="1"
+                android:text="Service"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_servicename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/axiforma_semibold"
+                android:maxLines="1"
+                android:text="Service name"
+                android:textColor="@color/dark_gray"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/txt_lblsub_services_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="Sub Services"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txt_sub_services_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="Sub Service Details"
+                android:textColor="@color/dark_gray"
+                android:textSize="10sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+              <View
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/Lightgray"/>
+            <TextView
+                android:id="@+id/txt_track_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="Track Order"
+                android:textColor="@color/myvacalablack"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/ll_trackorder">
+            <TextView
+                android:id="@+id/txt_track_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/axiforma_semibold"
+                android:text="Order is completed."
+                android:textColor="@color/dark_gray"
+                android:textSize="12sp"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+             <RelativeLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="end"
+                 android:layout_marginEnd="20dp">
+                 <ImageView
+                     android:layout_width="20dp"
+                     android:layout_height="20dp"
+                     android:src="@drawable/ic_forward" />
+             </RelativeLayout>
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

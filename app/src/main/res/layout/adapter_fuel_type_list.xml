@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginEnd="10dp"
+    android:gravity="center">
+
+
+
+
+
+
+
+                      <Button
+                       android:padding="10dp"
+                        android:background="@drawable/tags_rounded_corners"
+                        android:id="@+id/btn_fuel_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:text="Disel"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textAllCaps="false" />
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

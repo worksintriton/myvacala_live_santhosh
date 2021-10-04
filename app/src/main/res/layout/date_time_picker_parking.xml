@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/layout_bg_round"
+    android:layout_margin="20dp">
+    <ImageView
+        android:id="@+id/img_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_close_bg_gray"
+        android:layout_gravity="end"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_dateandtime"
+        android:fontFamily="@font/axiforma_semibold"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/txt_selecteddate_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_dateandtime"
+        android:fontFamily="@font/axiforma_semibold"
+        android:textColor="@color/dark_gray"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"/>
+
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:minHeight="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/rectangle_corner_bg_gray"
+                android:id="@+id/ll_checkindate">
+
+                <TextView
+                    android:id="@+id/txt_lbl_checkindate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:gravity="center"
+                    android:text="@string/checkin_date"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txt_checkin_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:gravity="center"
+                    android:text="@string/checkin_date"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:minHeight="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/rectangle_corner_bg_gray"
+                android:id="@+id/ll_checkoutdate">
+
+                <TextView
+                    android:id="@+id/txt_lbl_checkoutdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkout_date"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/txt_checkout_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkout_date"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_marginStart="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:minHeight="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/rectangle_corner_bg_gray"
+                android:id="@+id/ll_checkintime">
+
+                <TextView
+                    android:id="@+id/txt_lbl_checkintime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkin_time"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+                <TextView
+                    android:id="@+id/txt_checkin_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkin_time"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:minHeight="100dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/rectangle_corner_bg_gray"
+                android:id="@+id/ll_checkoutime">
+
+                <TextView
+                    android:id="@+id/txt_lbl_checkouttime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/checkout_time"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/txt_checkout_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:gravity="center"
+                    android:text="@string/checkout_time"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_datepicker">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            tools:ignore="UnusedAttribute" />
+        <DatePicker
+            android:layout_below="@+id/datePicker"
+            android:id="@+id/datePicker_checkout"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            tools:ignore="UnusedAttribute"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_timepicker">
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:timePickerMode="spinner"
+            tools:ignore="UnusedAttribute"
+            android:visibility="invisible"/>
+        <TimePicker
+            android:layout_below="@+id/timePicker"
+            android:id="@+id/timePicker_checkout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:timePickerMode="spinner"
+            tools:ignore="UnusedAttribute"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:background="@drawable/button_background"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="30dp"
+        android:fontFamily="@font/axiforma_semibold"
+        android:text="Done"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        tools:ignore="SmallSp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:baselineAligned="false"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="30dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/txt_lbl_noofhours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_hours"
+                android:fontFamily="@font/axiforma_semibold"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                android:gravity="center"/>
+            <TextView
+                android:id="@+id/txt_noofhours"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/no_hours"
+                android:fontFamily="@font/axiforma_semibold"
+                android:textColor="@color/dark_gray"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end|center"
+            android:layout_gravity="end|center"
+            android:layout_weight="1">
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

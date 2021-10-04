@@ -1,0 +1,280 @@
+<resources>
+    <string name="app_name">My vacala</string>
+    <string name="mobileverification">Mobile Verification</string>
+    <string name="pleaseenteryourphonenumber">Please enter your phone number </string>
+    <string name="enter10digits"><font size="16">Your 10 digit mobile number</font></string>
+    <string name="dontworry">Don\'t worry your number will not be shared with anyone. </string>
+    <string name="getotp">Get OTP</string>
+    <string name="country_code_text">+91</string>
+
+
+    <string name="enter_mobile_text">Please enter your mobile number to register</string>
+    <string name="sms_verify_text">My Vacala one time password SMS to verified your phone no.</string>
+    <string name="mobile_number_error">Enter mobile number</string>
+    <string name="mobile_length_error">Enter valid mobile number</string>
+    <string name="verification_code_text"> Please enter the OTP below to complete the verification process.</string>
+    <string name="verify_otp_title">Verify Mobile number</string>
+    <string name="invalid_otp">Invalid OTP.</string>
+    <string name="re_enter_otp">Please re-enter the correct OTP</string>
+
+    <string name="wehavesenta4digitotp">We have sent a "4 digit OTP" on</string>
+    <string name="resendotp">Resend OTP in</string>
+
+    <string name="submit">Submit</string>
+    <string name="invalid_date">Invalid Date Range</string>
+    <string name="invalid_time">Invalid Time Range</string>
+
+
+    <!--myprofile-->
+    <string name="myprofile">My Profile</string>
+    <string name="personaldetails">PERSONAL DETAILS</string>
+    <string name="name">NAME</string>
+    <string name="emailid">EMAIL ID</string>
+    <string name="mobileno">MOBILE NO</string>
+    <string name="dateofbirth">DATE OF BIRTH</string>
+    <string name="gender">GENDER</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="selectdateofbirth">Select date of birth</string>
+
+
+    <!--Bottom navigation-->
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="myvehicle">My Vehicle</string>
+    <string name="cart">Cart</string>
+    <string name="account">Account</string>
+
+    <string name="bookinghistory">Booking History</string>
+
+
+    <!--Bottom menu-->
+    <string name="genuine">Genuine Parts</string>
+    <string name="warranty">Warranty</string>
+    <string name="affardable">Affordable</string>
+    <string name="pickupanddrop">Pickup &amp; Drop</string>
+
+
+    <!--my account-->
+    <string name="myaccount">My Account</string>
+    <string name="profile">Profile</string>
+    <string name="mylocation">My Location</string>
+    <string name="subscription">Subscription</string>
+    <string name="orderhistory">Order History</string>
+    <string name="notifications">Notifications</string>
+    <string name="helpandsupport">Help &amp; Support</string>
+    <string name="sharemyvacala">Share My Vacala</string>
+    <string name="logout">Logout</string>
+
+    <string name="norecordsfound">No records found</string>
+    <string name="noplacesfound">No places found</string>
+    <string name="nopopularservicefound">No popular service found</string>
+    <string name="noservicefound">No service found</string>
+
+    <string name="addprofile">Add information to your profile</string>
+    <string name="alreadyownanaccount">Already own an account?</string>
+    <string name="signin">Sign In</string>
+
+    <string name="createnewaccount">Create a new Account.</string>
+    <string name="signiup">Sign Up</string>
+
+    <string name="yourname">Your Name</string>
+    <string name="youremail">Your Email</string>
+    <string name="yourmobileno">Your Mobile No</string>
+    <string name="waitingtoverifyOTP">Waiting to verify OTP</string>
+
+    <string name="selectyourcar">Select your car</string>
+    <string name="selectyourvehicle">Select your vehicle</string>
+    <string name="vehicletype">Vehicle Type</string>
+    <string name="selectbymodelorbrand">Search by Model or Brand</string>
+    <string name="popularcars">Popular Cars</string>
+    <string name="yourcars">Your Vehicles</string>
+    <string name="populartwowheelers">Popular Two Wheelers</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="pickuplocation">PickUp Location</string>
+    <string name="searchlocationaddress"><font size="12">Search Location Address</font></string>
+    <string name="iwanttoparknear"><font size="12">I want to park near...</font></string>
+
+    <string name="setpickuppoint">Set Pickup Point</string>
+
+    <string name="savethislocation">Save this location &amp; Proceed</string>
+
+    <string name="change">Change</string>
+    <string name="pleaseaddyouraddressdetialsbelow">Please add your address details below</string>
+
+    <string name="flotnobuildingno">Flat No. / Building No.</string>
+
+    <string name="nearbylandmark">Near by Landmark</string>
+    <string name="saveas">Save as</string>
+    <string name="work">Work</string>
+    <string name="others">Others</string>
+    <string name="pickanickname">Pick a Nick Name for this location</string>
+
+    <string name="addmyaddress">Add My Address</string>
+    <string name="editmyaddress">Edit My Address</string>
+
+    <string name="chooseyourlocation">Choose your location</string>
+    <string name="addotheraddressher">Add other address here</string>
+    <string name="addyourvehiclehere">Add your vehicle here</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="selectcity">Select City</string>
+    <string name="selectyourcity">Select Your City</string>
+
+    <string name="deletemsg">Are you sure you want to delete this location details?</string>
+    <string name="deletemsgvehicle">Are you sure you want to delete this vehicle details?</string>
+    <string name="locationstatuschange">Are you sure you want to change this location as default address?</string>
+    <string name="changethisaddress">Are you sure you want to change this address?</string>
+    <string name="vehiclestatuschange">Are you sure you want to change this vehicle as your default vehicle?</string>
+    <string name="vehiclestatuschangecart">Are you sure you want to change this vehicle as your default?
+        This will remove the previously added items added to the cart. Are you sure you want to proceed?</string>
+
+    <string name="findvehicleby">Find vehicle by Manufacturer</string>
+    <string name="proceedtocart">Proceed to Cart</string>
+    <string name="proceedtopayment">Proceed to payment</string>
+    <string name="paymentmethod">Payment Method</string>
+
+    <string name="carmanufacturer">Car Manufacturer</string>
+
+    <string name="yearofmfg">Year of Mfg.</string>
+    <string name="vehicleno">Vehicle No.</string>
+    <string name="loading">Loading...</string>
+    <string name="howcanwehelp">How can we help?</string>
+    <string name="selectservicesandcheckout">Select services &amp; checkout easily</string>
+    <string name="popularservices">Popular Services</string>
+    <string name="subservicespages">Sub Services Page</string>
+    <string name="subservices">Sub Services </string>
+    <string name="servicesskucode">Services SKU Code </string>
+    <string name="addtocart">ADD TO CART</string>
+    <string name="removefromcart">REMOVE FROM CART</string>
+
+    <string name="onemonthwarranty">1 Month Warranty</string>
+    <string name="threedays">3 Days</string>
+    <string name="completesatisfication">Complete Satisfication</string>
+    <string name="arrivalmode">Arrival Mode</string>
+    <string name="pickup">Pickup</string>
+    <string name="selfdrop">Self Drop</string>
+    <string name="dateandtime">Date &amp; Time</string>
+    <string name="gotacoupon">Got a Coupon? Type here</string>
+    <string name="apply">Apply</string>
+    <string name="remove">Remove</string>
+    <string name="anyohterissues">Any other issues? Type here...</string>
+    <string name="changeaddress">Change Address</string>
+    <string name="makepayment">Make Payment</string>
+    <string name="afterservice">After Service</string>
+    <string name="online">Online</string>
+    <string name="billdetails">Bill Details</string>
+    <string name="itemtotal">Item Total</string>
+    <string name="youpay">You Pay</string>
+    <string name="payu">Payu</string>
+    <string name="razorpay">Razor Pay</string>
+    <string name="paytm">Paytm</string>
+    <string name="bookingsummary">Booking Summary</string>
+    <string name="bookingdetails">Booking Details</string>
+    <string name="discountamount">Discount Amount</string>
+    <string name="userissues">User Issues</string>
+
+    <string name="service">Service</string>
+    <string name="bookingid">Booking ID</string>
+    <string name="vehicledetails">Vehicle Details</string>
+    <string name="registrationno">Registration No</string>
+    <string name="servicedate">Service Date</string>
+    <string name="servicetime">Service Time</string>
+    <string name="amountpaid">Amount Paid</string>
+
+    <string name="enjoyingmyvacala">Enjoying My vacala?</string>
+    <string name="tellaboutus">Tell about us to friends &amp; family</string>
+    <string name="findus">Find us on Playstore &amp; Appstore</string>
+    <string name="termsandconditions">Terms &amp; Conditions | Privacy Policy</string>
+    <string name="appversions">App versions : 1.0.1</string>
+
+    <string name="faq">FAQ</string>
+    <string name="whatismyorderid">What is my order ID?</string>
+    <string name="stilllookingforsupport">Still looking for support?</string>
+    <string name="notabletofindyouranswer">Not able to find your answer in our FAQ</string>
+    <string name="callsupport">Call Support</string>
+    <string name="emailsupport">Email Support</string>
+
+    <string name="yourorderstatus">Your Order Status</string>
+    <string name="yourvehicleisbeingserviced">YOUR VEHICLE IS BEING SERVICED</string>
+    <string name="finalpayable">Final Payable</string>
+    <string name="yourestimate">your estimate it is now available, \nPlease review &amp; make the payment \nfor us to begin with the service.</string>
+
+    <string name="cartorcheckout">Cart / Checkout</string>
+    <string name="postalcodeerrormesssage">Currently we are not providing the service in this location. Please select any other location</string>
+    <string name="postalcodeunablefinderrormesssage">Unable to find the Pincode. Please reselect or select nearest location of you</string>
+    <string name="vehicletypeerrormsg">You don\'t have the vehicle in two wheeler.Add two wheeler in the vehicle page and retry</string>
+    <string name="vehicletypefourwheelererrormsg">You don\'t have the vehicle in four wheeler.Add four wheeler in the vehicle page and retry</string>
+
+
+    <string name="dateex">Date &amp; Time</string>
+    <string name="bookingsummaryinfo">Hola !!  Your Booking is confirmed. Here is your booking details.</string>
+
+    <string name="bookingcomplete">Booking \n complete</string>
+    <string name="bookingaccepted">Booking \n Accepted</string>
+    <string name="vehiclepickedup">Vehicle  \n Picked up</string>
+    <string name="servicestarted">Service \n Started</string>
+    <string name="servicecompleted">Service \n Completed</string>
+    <string name="vehicledelivered">Vehicle \n Delivered</string>
+
+
+    <string name="txt_nike_shoes">Nike Power-Run</string>
+    <string name="txt_buy">Buy</string>
+    <string name="Rupees">₹</string>
+    <string name="nike_power_run">Nike Power-Run</string>
+    <string name="txt_product_price">8000</string>
+    <string name="yourestimatetypedetails">Your Estimate Details</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+
+
+    <string name="viewyourestimate">View your estimate</string>
+    <string name="vehicle_number">Vehicle Number</string>
+    <string name="fueltype">fueltype</string>
+    <string name="list_view">List View</string>
+    <string name="booking_for">Booking for</string>
+    <string name="your_parking_lot_is_successfully_confirmed">Your Parking lot is "\n" successfully confirmed</string>
+    <string name="share_location">Share Location</string>
+    <string name="booking_id">Booking ID</string>
+    <string name="floor">Floor/Block/Slot</string>
+    <string name="booking_slot_window">Booking slot window</string>
+    <string name="looking_to_extend_your_parking">Looking to extend your parking?</string>
+    <string name="click_here_to_extend_your_parking_with_ease">Click here to extend your parking with ease</string>
+
+    <string name="checkin_successfully">You\'ve successfully Checked In</string>
+    <string name="checkout_successfully">You\'ve successfully Checked Out</string>
+    <string name="parking_time_counter">Parking Time Counter</string>
+    <string name="final_payable">Final Payable</string>
+    <string name="total_amount_paid">Total amount paid</string>
+    <string name="your_cart_is_empty">Your cart is empty.</string>
+    <string name="map_view">Map View</string>
+    <string name="select_dateandtime">Select date &amp; time</string>
+    <string name="checkin_date">Checkin Date</string>
+    <string name="checkin_time">Checkin Time</string>
+    <string name="checkout_time">Checkout Time</string>
+    <string name="checkout_date">Checkout Date</string>
+
+
+    <string name="extend_checkin_date">Extend Checkin Date</string>
+    <string name="extend_checkin_time">Extend Checkin Time</string>
+    <string name="extend_checkout_time">Extend Checkout Time</string>
+    <string name="extend_checkout_date">Extend Checkout Date</string>
+
+    <string name="no_hours">No.Hours</string>
+
+    <string name="err_msg_scan">Please scan a valid QR Code</string>
+
+    <string name="validvehiclenumberrormsg">Please enter a valid vehicle number</string>
+    <string name="book_by_hour">Book by hour</string>
+    <string name="multi_day_booking">Multi day booking</string>
+    <string name="no_of_hours">No. of hours</string>
+    <string name="no_of_days">No. of days</string>
+
+    <string name="couponcodeapplied">Coupon code applied successfully</string>
+    <string name="couponcoderemoved">Coupon code removed successfully</string>
+
+    <string name="privacy">Terms &amp; Conditions | Privacy</string>
+    <string name="accept_terms_and_condition">Accept Terms &amp; Conditions</string>
+    <string name="terms_error">Please accept terms and conditions</string>
+</resources>

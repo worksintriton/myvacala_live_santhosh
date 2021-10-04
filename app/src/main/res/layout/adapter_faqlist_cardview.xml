@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/rectangle_corner_withooutradious"
+            android:padding="10dp">
+            <TextView
+                android:id="@+id/txt_faq_questions"
+                android:textColor="@color/myvacalablack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/whatismyorderid"
+                android:textSize="18sp"
+                android:fontFamily="@font/axiforma_bold" />
+            <TextView
+                android:id="@+id/txt_faq_answer"
+                android:textColor="@color/dark_gray"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/whatismyorderid"
+                android:textSize="14sp"
+                android:fontFamily="@font/axiforma_bold"
+                android:layout_marginTop="2dp" />
+        </LinearLayout>
+
+
+
+</LinearLayout>

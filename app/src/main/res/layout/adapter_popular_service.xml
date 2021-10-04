@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/Lightgray"
+    android:orientation="vertical">
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_root"
+        android:layout_marginEnd="10dp">
+        <ImageView
+            android:id="@+id/iv_popularservice_image"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:src="@drawable/myvacalalogo"
+            android:scaleType="fitXY"
+            android:background="@drawable/corner"/>
+        <TextView
+            android:id="@+id/txt_popularservices_name"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/axiforma_semibold"
+            android:text="Sub Services"
+            android:textColor="@color/myvacalablack"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+           />
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+</LinearLayout>

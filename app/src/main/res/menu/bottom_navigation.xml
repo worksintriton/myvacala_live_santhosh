@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_home_white"
+        android:title="@string/home" />
+    <item
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_white"
+        android:title="@string/search"/>
+    <item
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:id="@+id/myvehicle"
+        android:icon="@drawable/ic_myvehicle_white"
+        android:title="@string/myvehicle"/>
+
+    <item
+        android:id="@+id/cart"
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:icon="@drawable/ic_cart_white"
+        android:title="@string/cart" />
+    <item
+        app:showAsAction="ifRoom"
+        android:enabled="true"
+        android:id="@+id/account"
+        android:icon="@drawable/ic_account_white"
+        android:title="@string/account"/>
+
+
+
+</menu>

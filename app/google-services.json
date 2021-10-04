@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "660069596184",
+    "firebase_url": "https://myvacala2020.firebaseio.com",
+    "project_id": "myvacala2020",
+    "storage_bucket": "myvacala2020.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660069596184:android:bb833b6505a86d2cbcd76d",
+        "android_client_info": {
+          "package_name": "com.triton.myvacala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660069596184-d60pvstt5ernv3f1le6a3cnlm68m97ab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIlpr9xp1erRsh3mY6Iy0HljqeNplmR84"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660069596184-d60pvstt5ernv3f1le6a3cnlm68m97ab.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660069596184-crkm31sfcpmevh1ap93itanojmljo98q.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "triton.MyVacala"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

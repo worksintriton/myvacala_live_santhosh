@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headerView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="UselessParent">
+
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/circle_withoutbg"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="5dp">
+                <ImageView
+                    android:id="@+id/cv_vehicleimage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logo"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    tools:ignore="ContentDescription" />
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_vehiclename"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:maxLines="1"
+                    android:padding="5dp"
+                    android:text="vehiclename"
+                    android:textColor="@color/myvacalablack"
+                    android:textSize="14sp"
+                    tools:ignore="HardcodedText" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_vehiclefueltype"
+                        android:layout_width="39dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="5dp"
+                        android:background="@drawable/button_rectangle_corner"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/fueltype"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="6sp"
+                        tools:ignore="SmallSp"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:id="@+id/txt_vehicle_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:maxLines="1"
+                        android:text="@string/vehicle_number"
+                        android:textColor="@color/myvacalablack"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="5dp"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="26dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:gravity="center_vertical"
+                    android:text="@string/vehicletype"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:visibility="gone"/>
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:gravity="end"
+                    android:orientation="horizontal">
+
+
+                    <ToggleButton
+                        android:id="@+id/togglebutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/ic_toggle_car"
+                        android:checked="true"
+                        android:gravity="right|center_vertical"
+                        android:textOff="@null"
+                        android:textOn="@null"
+                        tools:ignore="ObsoleteLayoutParam,RtlHardcoded" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/whiteFive" />
+
+        <RelativeLayout
+            android:id="@+id/rllist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_corner"
+            android:visibility="visible">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+
+                />
+
+                <ImageView
+                    android:id="@+id/img_currentlocation"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end|center"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="25dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_currentlocation"
+                    tools:ignore="ContentDescription" />
+
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_placessearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/edittext_bg_rect_color"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    tools:ignore="UseCompoundDrawables">
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_search_color"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:layout_marginStart="10dp"
+                        android:gravity="center_vertical"
+                        android:id="@+id/tv_searchlocationaddress"
+                        android:layout_width="170dp"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/axiforma_semibold"
+                        android:hint="@string/iwanttoparknear"
+                        android:maxLines="1"
+                        android:textColor="@color/myvacalablack"
+                        android:textColorHint="@color/dark_gray"
+                        android:textSize="10sp"
+                        tools:ignore="SmallSp" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end">
+
+                    <ImageView
+                        android:id="@+id/img_clear_search"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:src="@drawable/ic_close_color"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="259dp"
+                android:background="@drawable/layout_bg_round">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="UselessParent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/ll_listviewclick"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/ic_baseline_keyboard_arrow_up_24" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/axiforma_semibold"
+                                android:gravity="center"
+                                android:text="@string/list_view"
+                                android:textColor="@color/dark_gray"
+                                android:textSize="12sp" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="horizontal"
+                            android:baselineAligned="false"
+                            android:id="@+id/ll_bookingfor">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_weight="1">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="5dp"
+                                    android:fontFamily="@font/axiforma_semibold"
+                                    android:text="@string/booking_for"
+                                    android:textColor="@color/myvacalablack"
+                                    android:textSize="18sp" />
+
+                                <TextView
+                                    android:id="@+id/txt_bookingdateandtime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/axiforma_semibold"
+                                    android:text="bookingdateandtime"
+                                    android:textColor="@color/dark_gray"
+                                    android:textSize="14sp"
+                                    tools:ignore="Autofill,LabelFor" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_bookingdate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|center_horizontal"
+                                android:gravity="center|center_horizontal"
+                                android:minHeight="50dp"
+                                android:layout_weight="6">
+
+                                <ImageView
+                                    android:layout_width="31dp"
+                                    android:layout_height="24dp"
+                                    android:layout_gravity="center|center_horizontal"
+                                    android:scaleType="centerInside"
+                                    android:src="@drawable/ic_calendar" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            tools:ignore="UselessParent"
+                            android:id="@+id/fl_parkingpage">
+
+
+                            <androidx.viewpager.widget.ViewPager
+                                android:id="@+id/viewpager"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp" />
+
+                            <com.google.android.material.tabs.TabLayout
+                                android:id="@+id/tabs"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                app:tabBackground="@drawable/tab_selector_parking"
+                                app:tabGravity="center"
+                                android:layout_marginTop="5dp"
+                                app:tabIndicatorHeight="0dp" />
+
+                        </FrameLayout>
+
+
+
+
+                        <TextView
+                            android:id="@+id/tv_norecords"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center"
+                            android:text="@string/norecordsfound"
+                            android:textColor="@color/color"
+                            android:textSize="16sp"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/ll_mapview"
+            android:visibility="gone"
+            android:layout_marginBottom="60dp">
+
+            <LinearLayout
+                android:id="@+id/ll_mapviewclick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_baseline_keyboard_arrow_up_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/axiforma_semibold"
+                    android:gravity="center"
+                    android:text="@string/map_view"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_parkingoptionslist"
+                />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/tv_norecords_parkinglist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/norecordsfound"
+                android:textSize="16sp"
+                android:textColor="@color/color"
+                android:gravity="center"
+                android:visibility="gone"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation_parking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="8dp"
+            app:itemBackground="@color/myvacalablack"
+            app:itemIconSize="20dp"
+            app:itemIconTint="@drawable/drawer_item_color"
+            app:itemTextColor="@drawable/drawer_item_color"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/bottom_navigation_parking"
+
+            />
+
+    </LinearLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/avi_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:indicatorColor="@color/myvacalabutton"
+        app:indicatorName="LineSpinFadeLoaderIndicator"
+        tools:ignore="ObsoleteLayoutParam" />
+
+</RelativeLayout>
+
